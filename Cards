@@ -1,5 +1,9 @@
 public class Cards
 {
+  public rules()
+  {
+  System.out.println("");
+  }
 
 
   public String getCard(int card)
