@@ -7,11 +7,13 @@ public class Blackjack
   
   Dealer d = new Dealer();
   
+  Cards c = new Cards();
+  
   public void startGame()
   {
     d.Deal();
 
-    System.out.println("Cards Equal: " + d.cardValue;
+    System.out.println("Cards Equal: " + d.cardValue);
     
     Choice();
     
@@ -42,14 +44,25 @@ public class Blackjack
        Choice();
      }
      
-     
+       continueGame();
+   }
+  
+  
+  
+                        
      public void continueGame()
      {
        
-     }
-     
-   }
-                        
+     }  
       
-      
+  
+    public void printCards();
+    {
+      System.out.println(c.getCards); //will change when we decide what the card storage thing will be called.
+    
+    }
+  
+  
+  
+  
 }
