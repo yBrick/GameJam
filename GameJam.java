@@ -15,7 +15,7 @@ public class GameJam
       char beginning = s.nextLine;
       if(beginning.equalsIgnoreCase('s'))
       {
-      b.startGame();
+        b.startGame();
       }
       else if(beginning.equalsIgnoreCase('r'))
       {
