@@ -7,7 +7,7 @@ public class Blackjack
   
   Dealer d = new Dealer();
   
-  Cards c = new Cards();
+  
   
   public void startGame()
   {
@@ -56,13 +56,13 @@ public class Blackjack
      }  
       
   
-    public void printCards();
+    public void printCards()
     {
-      System.out.println(c.getCards); //will change when we decide what the card storage thing will be called.
+      System.out.println(d.getCards); //will change when we decide what the card storage thing will be called.
     
     }
   
   
   
-  
+ 
 }
