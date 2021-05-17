@@ -7,7 +7,7 @@ public class Blackjack
   
   Dealer d = new Dealer();
   
-  
+  Cards c = new Cards();
   
   public void startGame()
   {
@@ -37,6 +37,7 @@ public class Blackjack
      else if(gameChoice = 3)
      {
        d.AddBet();
+       d.Hit();
      }
      else()
      {
@@ -58,8 +59,7 @@ public class Blackjack
   
     public void printCards()
     {
-      System.out.println(d.getCards); //will change when we decide what the card storage thing will be called.
-    
+      for int i = 0; 
     }
   
   
