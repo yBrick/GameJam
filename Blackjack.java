@@ -7,6 +7,8 @@ public class Blackjack
   ArrayList <Int> DealerCards = new ArrayList <Int>();
    ArrayList <Int> PlayerCards = new ArrayList <Int>();
   
+  Boolean PlayerStay = false;
+  
   Scanner sc = new Scanner(System.in);
   
   Dealer d = new Dealer();
@@ -33,11 +35,14 @@ public class Blackjack
      if(gameChoice = 1)
      {
        d.Hit();
+       printCards();
        
      }
      else if(gameChoice = 2)
      {
        d.Stay();
+       printCards();
+       
      }
      else if(gameChoice = 3)
      {
@@ -50,22 +55,30 @@ public class Blackjack
        Choice();
      }
      
-       continueGame();
+
    }
   
   
   
-                        
-     public void continueGame()
-     {
-       
-     }  
+                       
       
   
     public void printCards()
     {
       for (int i = 0; i < 
       
+      
+    }
+           
+           
+    public boolean checkStay()
+    {
+      if(PlayerStay = true && DealerStay = true)
+      {
+        
+        
+      }
+     
       
     }
   
