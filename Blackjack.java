@@ -1,8 +1,12 @@
 import java.util.Scanner();
-
+import java.util.ArrayList();
 
 public class Blackjack
 {
+  
+  ArrayList <String> DealerCards = new ArrayList <String>();
+   ArrayList <String> PlayerCards = new ArrayList <String>();
+  
   Scanner sc = new Scanner(System.in);
   
   Dealer d = new Dealer();
@@ -59,7 +63,9 @@ public class Blackjack
   
     public void printCards()
     {
-      for int i = 0; 
+      for (int i = 0; i < 
+      
+      
     }
   
   
