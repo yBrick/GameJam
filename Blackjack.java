@@ -9,6 +9,8 @@ public class Blackjack
   
   Boolean PlayerStay = false;
   
+  GameJam g = new GameJam();
+  
   Scanner sc = new Scanner(System.in);
   
   Dealer d = new Dealer();
@@ -59,17 +61,8 @@ public class Blackjack
    }
   
   
+
   
-                       
-      
-  
-    public void printCards()
-    {
-      for (int i = 0; i < 
-      
-      
-    }
-           
            
     public boolean checkStay()
     {
