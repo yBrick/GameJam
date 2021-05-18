@@ -21,7 +21,7 @@ public class Blackjack
   {
     d.Deal();
 
-    System.out.println("Cards Equal: " + d.cardValue);
+  
     
     Choice();
     
@@ -36,14 +36,13 @@ public class Blackjack
      
      if(gameChoice = 1)
      {
-       d.Hit();
-       printCards();
-       
+       d.PlayerHit();
+       d.DealerChoice()
      }
      else if(gameChoice = 2)
      {
-       d.Stay();
-       printCards();
+       d.PlayerStay();
+       
        
      }
      else if(gameChoice = 3)
