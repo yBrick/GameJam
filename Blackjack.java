@@ -30,7 +30,7 @@ public class Blackjack
                        
    public int Choice()
    {
-     System.out.println("Please select an option:\n 1. Hit \n 2. Stay \n 3. Bet");
+     System.out.println("Please select an option:\n [1] Hit \n [2] Stay ");
      
      int gameChoice = sc.nextInt();
      
@@ -44,11 +44,6 @@ public class Blackjack
        d.PlayerStay();
        
        
-     }
-     else if(gameChoice = 3)
-     {
-       d.AddBet();
-       d.Hit();
      }
      else()
      {
