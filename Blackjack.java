@@ -4,8 +4,8 @@ import java.util.ArrayList();
 public class Blackjack
 {
   
-  ArrayList <Int> DealerCards = new ArrayList <Int>();
-   ArrayList <Int> PlayerCards = new ArrayList <Int>();
+  ArrayList <Integer> DealerCards = new ArrayList <Integer>();
+   ArrayList <Integer> PlayerCards = new ArrayList <Integer>();
   
   Boolean PlayerStay = false;
   
