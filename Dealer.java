@@ -52,7 +52,7 @@ public class Dealer
   {
     return r.nextInt(12);
   }
-  public boolean DealerChoice()
+  public void DealerChoice()
   {
     for(i : b.DealerCards)
     {
@@ -66,7 +66,8 @@ public class Dealer
       {
         boolean DealerStay = false;
       }
-      return DealerStay;
+     cardAmt = cardAmt +1; //will ive realized its easier for you to add to the dealers card amount in dealer instead of blackjack, 
+      //if i went stupid and messed up feel free to change it up in my code
     }
   }
   
