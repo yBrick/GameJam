@@ -42,7 +42,7 @@ public class Blackjack
      else if(gameChoice = 2)
      {
        d.PlayerStay();
-       
+       d.DealerChoice();
        
      }
      else()
