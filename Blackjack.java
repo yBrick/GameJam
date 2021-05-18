@@ -4,8 +4,8 @@ import java.util.ArrayList();
 public class Blackjack
 {
   
-  ArrayList <String> DealerCards = new ArrayList <String>();
-   ArrayList <String> PlayerCards = new ArrayList <String>();
+  ArrayList <Int> DealerCards = new ArrayList <Int>();
+   ArrayList <Int> PlayerCards = new ArrayList <Int>();
   
   Scanner sc = new Scanner(System.in);
   
@@ -33,6 +33,7 @@ public class Blackjack
      if(gameChoice = 1)
      {
        d.Hit();
+       
      }
      else if(gameChoice = 2)
      {
