@@ -33,7 +33,7 @@ public class GameJam
       }
       
       
-      public void endGame
+      public void endGame //im fairly sure we still have to create the playerAmount int, but other than that i think this works
       {
        if(dealerAmount = 21)
        {
