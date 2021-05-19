@@ -3,8 +3,8 @@ public class GameJam
 {
   Dealer d = new Dealer();
   
-  int dealerAmount = d.DealerAmount();
-  int playerAmount = d.PlayerAmount();
+  int dealerAmount = d.DealerAmount;
+  int playerAmount = d.PlayerAmount;
   
   public static void main (String [] args)
   {
