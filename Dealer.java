@@ -18,9 +18,23 @@ public class Dealer
   
   public void PlayerHit()
   {
+    int PlayerAdd = cardGen();
+    b.PlayerCards.add(PlayerAdd);
+    c.printCards(b.PlayerCards);
+  for(i : b.PlayerCards)
+    {
+       int PlayerAmount = 0;
+   PlayerAmount = PlayerAmount + b.PlayerCards.get(i);
+      
+    }
+    if(PlayerAmount >= 21 )
+    {
+      g.endGame();
+    }
+    
   }
   
-  public void PlayerHit()
+  public void PlayerStay()
   {
   }
   
@@ -31,7 +45,7 @@ public class Dealer
     b.DealerCards.add(Dealer1);
     b.DealerCards.add(Dealer2);
     System.out.println("Dealer's Cards:");
-    c.printCards(b.DealerCards)
+    c.printCards(b.DealerCards);
       int DealerAmount = Dealer1 + Dealer2;
       if(Dealer1 + Dealer2 >= 21)
     {
@@ -71,6 +85,39 @@ public class Dealer
      cardAmt = cardAmt +1; //will ive realized its easier for you to add to the dealers card amount in dealer instead of blackjack, 
       //if i went stupid and messed up feel free to change it up in my code
     }
+   public void endGame //im fairly sure we still have to create the playerAmount int, but other than that i think this works
+      {
+       if(dealerAmount = 21)
+       {
+         System.out.println("Dealer has 21, Dealer wins!");
+       }
+        else if(playerAmount = 21)
+        {
+          System.out.println("You have 21, blackjack!");
+        }
+         else if(dealerAmount > 21)
+        {
+          System.out.println("Dealer has " + dealerAmount + ". Dealer has gone bust, player wins!");
+        }
+         else if(playerAmount > 21)
+        {
+          System.out.println("Dealer has " + dealerAmount + ". Player has " + playerAmount + ". Player has bust, Dealer wins!");
+        }
+         else if(dealerAmount && playerAmount < 21)
+        {
+           if(dealerAmount > playerAmount)
+           {
+             System.out.println("Dealer has " + dealerAmount + ". Player has " + playerAmount + ". Dealer wins!")
+           }
+           else if(playerAmount > dealerAmount)
+           {
+             System.out.println("Dealer has " + dealerAmount + ". Player has " + playerAmount + ". Player wins!")
+           }
+           else
+           {
+             System.out.println("Dealer has " + dealerAmount + ". Player has " + playerAmount + ". Its a a tie! Dealer wins!")
+           }
+        }
   }
   
 }
