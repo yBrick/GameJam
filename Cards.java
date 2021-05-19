@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Array;
 public class Cards
 {
-    String[] cardRowChar = new String[]{"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
+    String[] cardRowChar = new String[]{"A","2","3","4","5","6","7","8","9","10","J","Q","K"}; //Quick note, J Q & K all equal 10
     String[] intArray = new String[]{"--------------","|            |","|            |","void","|            |","|            |","______________",};
     public void rules()
     {
