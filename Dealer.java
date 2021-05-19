@@ -5,19 +5,19 @@ public class Dealer
   GameJam g = new GameJam();
   Blackjack b = new Blackjack();
   Random r = new Random();
-  int cardAmt = 2;
+ 
   public void DealerHit()
   {
-   
+    System.println("The Dealer Hits");
+   int DealerAdd = cardGen();
+    b.DealerCards.add(DealerAdd);
+    c.printCards(b.DealerCards);
   }
   
-  public void DealerStay()
-  {
-    
-  }
   
   public void PlayerHit()
   {
+    System.out.println("You Hit");
     int PlayerAdd = cardGen();
     b.PlayerCards.add(PlayerAdd);
     c.printCards(b.PlayerCards);
@@ -29,13 +29,15 @@ public class Dealer
     }
     if(PlayerAmount >= 21 )
     {
-      g.endGame();
+      endGame();
     }
     
   }
   
   public void PlayerStay()
   {
+    System.out.println("You Stay");
+    b.PlayerStay = true;
   }
   
   public void Deal()
@@ -43,17 +45,17 @@ public class Dealer
     int Dealer1 = cardGen();
     int Dealer2 = cardGen();    
     b.DealerCards.add(Dealer1);
-    b.DealerCards.add(Dealer2);
     System.out.println("Dealer's Cards:");
     c.printCards(b.DealerCards);
+       b.DealerCards.add(Dealer2);
       int DealerAmount = Dealer1 + Dealer2;
       if(Dealer1 + Dealer2 >= 21)
     {
-      g.endGame();
+      c.printCards(b.DealerCards);
+      endGame();
     }
     int Player1 = cardGen();
-    int Player2 = cardGen();
-   
+    int Player2 = cardGen();   
     b.PlayerCards.add(Player1);
     b.PlayerCards.add(Player2);
     System.out.println("\nPlayer's Cards:");
@@ -61,7 +63,7 @@ public class Dealer
       int PlayerAmount = Player1+Player2;
        if(Player1 + Player2 >= 21)
     {
-      g.endGame();
+      endGame();
     }
   }
   public int cardGen()
@@ -80,9 +82,11 @@ public class Dealer
       }
       else
       {
+        
         boolean DealerStay = false;
+        DealerHit();
       }
-     cardAmt = cardAmt +1; //will ive realized its easier for you to add to the dealers card amount in dealer instead of blackjack, 
+      //will ive realized its easier for you to add to the dealers card amount in dealer instead of blackjack, 
       //if i went stupid and messed up feel free to change it up in my code
     }
    public void endGame //im fairly sure we still have to create the playerAmount int, but other than that i think this works
@@ -93,7 +97,7 @@ public class Dealer
        }
         else if(playerAmount = 21)
         {
-          System.out.println("You have 21, blackjack!");
+          System.out.println("You have 21, Blackjack!");
         }
          else if(dealerAmount > 21)
         {
