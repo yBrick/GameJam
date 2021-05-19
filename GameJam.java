@@ -24,7 +24,7 @@ public class GameJam
       }
       else if(beginning.equalsIgnoreCase('r'))
       {
-        c.rules();
+        c.Rules();
       }
       else
       {
