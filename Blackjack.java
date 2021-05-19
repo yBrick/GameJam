@@ -7,7 +7,8 @@ public class Blackjack
   ArrayList <Integer> DealerCards = new ArrayList <Integer>();
    ArrayList <Integer> PlayerCards = new ArrayList <Integer>();
   
-  Boolean PlayerStay = false;
+  boolean PlayerStay = false;
+  boolean loop = false;
   
   GameJam g = new GameJam();
   
@@ -27,8 +28,10 @@ public class Blackjack
     
   }
       
-                       
+  
    public int Choice()
+   {
+      while(loop == false)
    {
      System.out.println("Please select an option:\n [1] Hit \n [2] Stay ");
      
@@ -37,12 +40,14 @@ public class Blackjack
      if(gameChoice = 1)
      {
        d.PlayerHit();
-       d.DealerChoice()
+       d.DealerChoice();
+            checkStay();
      }
      else if(gameChoice = 2)
      {
        d.PlayerStay();
        d.DealerChoice();
+       checkStay();
        
      }
      else()
@@ -50,13 +55,10 @@ public class Blackjack
        Sytsem.out.println("Please choose a valid option");
        Choice();
      }
+      }
      
 
    }
-  
-  
-
-  
            
     public void checkStay()
     {
@@ -68,7 +70,7 @@ public class Blackjack
 
      
       
-    }
+   }
   
   
   
