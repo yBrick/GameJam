@@ -11,14 +11,14 @@ public class Cards
 
     public void test()
     {
-     ArrayList<int> str = new ArrayList<int>();
+     ArrayList<Integer> str = new ArrayList<Integer>();
        str.add(0);
        str.add(9);
        str.add(12); 
       printCards(str);
     }
   
-    public void printCards(ArrayList <int> cardList)
+    public void printCards(ArrayList <Integer> cardList)
     {
         for(int i = 0; i<7; i++)
         {
