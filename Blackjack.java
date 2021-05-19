@@ -64,6 +64,7 @@ public class Blackjack
     {
       if(PlayerStay = true && d.DealerStay = true)
       {
+        loop = true;
         d.EndGame();
         
       }
