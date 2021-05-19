@@ -60,9 +60,9 @@ public class Blackjack
            
     public void checkStay()
     {
-      if(PlayerStay = true && DealerStay = true)
+      if(PlayerStay = true && d.DealerStay = true)
       {
-        g.EndGame();
+        d.EndGame();
         
       }
 
