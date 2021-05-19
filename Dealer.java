@@ -32,6 +32,7 @@ public class Dealer
     b.DealerCards.add(Dealer2);
     System.out.println("Dealer's Cards:");
     c.printCards(b.DealerCards)
+      int DealerAmount = Dealer1 + Dealer2;
       if(Dealer1 + Dealer2 >= 21)
     {
       g.endGame();
@@ -43,6 +44,7 @@ public class Dealer
     b.PlayerCards.add(Player2);
     System.out.println("\nPlayer's Cards:");
     c.printCards(b.PlayerCards)
+      int PlayerAmount = Player1+Player2;
        if(Player1 + Player2 >= 21)
     {
       g.endGame();
